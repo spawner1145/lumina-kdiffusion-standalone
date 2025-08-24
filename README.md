@@ -5,4 +5,4 @@ standalone lumina2 inference with k-diffusion
 
 Thanks to:
 - [k-diffusion](https://github.com/crowsonkb/k-diffusion.git)
-- [sd-scriots](https://github.com/kohya-ss/sd-scripts.git)
+- [sd-scripts](https://github.com/kohya-ss/sd-scripts.git)
