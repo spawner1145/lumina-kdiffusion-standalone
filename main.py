@@ -605,7 +605,7 @@ def generate_image(
     guidance_scale: float,
     negative_prompt: Optional[str],
     args: argparse.Namespace,
-    cfg_trunc_ratio: float = 0.25,
+    cfg_trunc_ratio: float = 1,
     renorm_cfg: float = 1.0,
 ):
     #
@@ -801,7 +801,7 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--cfg_trunc_ratio",
         type=float,
-        default=0.25,
+        default=1,
         help="The ratio of the timestep interval to apply normalization-based guidance scale. For example, 0.25 means the first 25%% of timesteps will be guided.",
     )
     parser.add_argument(
