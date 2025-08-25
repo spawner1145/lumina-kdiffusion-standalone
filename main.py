@@ -118,7 +118,7 @@ def denoise_k_diffusion(
     neg_txt_mask: Tensor,
     steps: int,
     guidance_scale: float = 4.0,
-    cfg_trunc_ratio: float = 0.25,
+    cfg_trunc_ratio: float = 1,
     renorm_cfg: float = 1.0,
     sampler: str = "euler",
     scheduler_func: str = "normal_scheduler",
@@ -156,7 +156,7 @@ def denoise(
     neg_txt_mask: Tensor,
     timesteps: Union[List[float], torch.Tensor],
     guidance_scale: float = 4.0,
-    cfg_trunc_ratio: float = 0.25,
+    cfg_trunc_ratio: float = 1,
     renorm_cfg: float = 1.0,
 ):
     for i, t in enumerate(tqdm(timesteps)):
